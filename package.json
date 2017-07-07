@@ -1,0 +1,43 @@
+{
+  "name": "es6-node-express-server-starter-kit",
+  "version": "0.1.0",
+  "description": "ES6 Express Node web server simple starter kit",
+  "main": "index.js",
+  "author": "Davide Palazzo <davide@revengecreative.com>",
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "es6",
+    "express",
+    "routing",
+    "server",
+    "nodemon",
+    "eslint",
+    "babel",
+    "pm2",
+    "yarn"
+
+  ],
+  "scripts": {
+    "start": "yarn dev-start",
+    "dev-start": "nodemon --ignore lib --exec babel-node src/server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "prod-build": "rimraf lib && babel src -d lib",
+    "prod-start": "NODE_ENV=production pm2 start lib/server && pm2 logs",
+    "prod-stop": "pm2 delete server"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.1.1",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pm2": "^2.5.0"
+  }
+}

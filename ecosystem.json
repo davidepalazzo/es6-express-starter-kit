@@ -1,0 +1,34 @@
+{
+  /**
+  * Application configuration section
+  * http://pm2.keymetrics.io/docs/usage/application-declaration/
+  **/
+  apps : [
+    // First application
+    {
+      name      : "es6-node-express-server-starter-kit",
+      script    : "./lib/server/index.js",
+      env: {
+        COMMON_VARIABLE: "true"
+      },
+      env_production : {
+        NODE_ENV: "production"
+      }
+    }
+  ],
+
+  /**
+  * Deployment section
+  * http://pm2.keymetrics.io/docs/usage/deployment/
+  **/
+  deploy : {
+    production : {
+      user : "deploy",
+      host : "",
+      ref  : "origin/master",
+      repo : "",
+      path : "/home/deploy/",
+      "post-deploy" : "nvm install && yarn install && /home/deploy/.nvm/versions/node/v7.9.0/bin/pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}
