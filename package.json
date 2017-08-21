@@ -16,7 +16,6 @@
     "babel",
     "pm2",
     "yarn"
-
   ],
   "scripts": {
     "start": "yarn dev-start",
