@@ -28,15 +28,15 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-eslint": "^7.2.3",
-    "babel-preset-env": "^1.6.0",
-    "eslint": "^4.1.1",
-    "nodemon": "^1.11.0",
-    "rimraf": "^2.6.1"
+    "babel-eslint": "^8.0.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.11.0",
+    "nodemon": "^1.12.1",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
-    "pm2": "^2.5.0"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pm2": "^2.7.2"
   }
 }
