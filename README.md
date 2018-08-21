@@ -4,7 +4,7 @@
 
 This is a simple boilerplate to start working with an Express server right away. [Babel CLI](https://babeljs.io/docs/usage/cli/) does all the magic, compiling ES6 to standard JS. No more difference in syntax between the front-end (e.g React, Redux, etc.) and the back-end.
 
-[![node](https://img.shields.io/badge/babel%20cli-v6.24.1-f5da55.svg)](http://babeljs.io/docs/usage/cli/) [![node](https://img.shields.io/badge/express-v4.16.2-lightgrey.svg)](http://expressjs.com/)  [![node](https://img.shields.io/badge/eslint-v4.1.1-463fd4.svg)](http://eslint.org/) [![node](https://img.shields.io/badge/nodemon-v1.12.1-76d04b.svg)](https://nodemon.io/) [![node](https://img.shields.io/badge/pm2-v2.7.2-5fd0eb.svg)](https://nodejs.org/)
+[![node](https://img.shields.io/badge/babel%20cli-v6.24.1-f5da55.svg)](http://babeljs.io/docs/usage/cli/) [![node](https://img.shields.io/badge/express-v4.16.3-lightgrey.svg)](http://expressjs.com/)  [![node](https://img.shields.io/badge/eslint-v5.4.0-463fd4.svg)](http://eslint.org/) [![node](https://img.shields.io/badge/nodemon-v1.18.3-76d04b.svg)](https://nodemon.io/) [![node](https://img.shields.io/badge/pm2-v3.0.3-5fd0eb.svg)](https://nodejs.org/)
 
 
 ## Technologies & Packages
