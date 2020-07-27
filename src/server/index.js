@@ -19,8 +19,15 @@ server.get('/', (req, res) => {
   `)
 })
 
+if (!module.parent) {
+  server.listen(config.port, () => {
+    // eslint-disable-next-line no-console
+    console.log(
+      `🏎  Server running on port ${config.port} - ${
+        isProd ? 'production' : 'development'
+      } mode.`
+    )
+  })
+}
 
-server.listen(config.port, () => {
-  // eslint-disable-next-line no-console
-  console.log(`🏎  Server running on port ${config.port} - ${isProd ? 'production' : 'development'} mode.`)
-})
+export default server
