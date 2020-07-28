@@ -4,7 +4,12 @@
 
 This is a simple boilerplate to start working with an Express server right away. [Babel CLI](https://babeljs.io/docs/usage/cli/) does all the magic, compiling ES6 to standard JS. No more difference in syntax between the front-end (e.g React, Redux, etc.) and the back-end.
 
-[![node](https://img.shields.io/badge/babel%20cli-v6.24.1-f5da55.svg)](http://babeljs.io/docs/usage/cli/) [![node](https://img.shields.io/badge/express-v4.16.3-lightgrey.svg)](http://expressjs.com/)  [![node](https://img.shields.io/badge/eslint-v5.4.0-463fd4.svg)](http://eslint.org/) [![node](https://img.shields.io/badge/nodemon-v1.18.3-76d04b.svg)](https://nodemon.io/) [![node](https://img.shields.io/badge/pm2-v3.0.3-5fd0eb.svg)](https://nodejs.org/)
+[![node](https://img.shields.io/badge/babel%20cli-v7.10.5-f5da55.svg)](http://babeljs.io/docs/usage/cli/)
+[![node](https://img.shields.io/badge/express-v4.17.1-lightgrey.svg)](http://expressjs.com/)
+[![node](https://img.shields.io/badge/jest-v26.1.0-15c213.svg)](https://jestjs.io/)
+[![node](https://img.shields.io/badge/eslint-v7.5.0-463fd4.svg)](http://eslint.org/)
+[![node](https://img.shields.io/badge/nodemon-v2.0.4-76d04b.svg)](https://nodemon.io/)
+[![node](https://img.shields.io/badge/pm2-v4.4.0-5fd0eb.svg)](https://github.com/Unitech/pm2)
 
 
 ## Technologies & Packages
@@ -37,6 +42,17 @@ yarn start
 ```
 
 Go to [`http://localhost:3000/`](localhost:3000). The terminal should provide a notification with a successful message. `Nodemon` is listening for changes and the server will restart automatically anytime a file is saved.
+
+## Test
+Write test cases using [https://jestjs.io/](Jest) and [https://github.com/visionmedia/supertest#readme](Supertest).
+```
+yarn test
+```
+
+Or if you want to run and watch for changes during testing
+```
+yarn test:watch
+```
 
 ## Build
 ----
