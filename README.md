@@ -18,13 +18,15 @@ This is a simple boilerplate to start working with an Express server right away.
 | ------ | ------ |
 | Babel CLI | http://babeljs.io/docs/usage/cli/ |
 | Babel Eslint | https://github.com/babel/babel-eslint |
-| babel-preset-env | https://github.com/babel/babel-preset-env |
 | body-parser | https://github.com/expressjs/body-parser |
 | Eslint | https://github.com/eslint/eslint |
 | Express | https://github.com/expressjs/express |
+| Jest | https://jestjs.io/ |
 | Node | https://github.com/nodejs/node |
 | Nodemon | https://github.com/remy/nodemon |
+| PM2 | https://github.com/Unitech/pm2 |
 | Rimraf | https://github.com/isaacs/rimraf |
+| Supertest | https://github.com/visionmedia/supertest |
 | Yarn | https://github.com/yarnpkg/yarn/ |
 
 ## Installation
@@ -49,7 +51,7 @@ Write test cases using [https://jestjs.io/](Jest) and [https://github.com/vision
 yarn test
 ```
 
-Or if you want to run and watch for changes during testing
+Or if you want to watch for file changes while testing
 ```
 yarn test:watch
 ```
